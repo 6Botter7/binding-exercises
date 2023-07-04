@@ -8,8 +8,14 @@ export default class Welcome extends crs.classes.BindableElement {
     }
 
     async preLoad() {
+        await this.setProperty("firstName", "John");
+        await this.setProperty("lastName", "Doe");
+        await this.setProperty("age", 30);
+
         await crs.binding.translations.add({
-            firstName
-        });
+            firstName : "First Name",
+            lastName : "Last Name",
+            age : "Age"
+        }, "en");
     }
 }

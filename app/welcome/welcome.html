@@ -1,2 +1,20 @@
 <link rel="stylesheet" href="/app/welcome/welcome.css">
 <h2>${title}</h2>
+
+<label>
+    <div>&{en.firstName}</div>
+    <input id="edtFirstName" value.bind="firstName"/>
+</label>
+
+<label>
+    <div>&{en.lastName}</div>
+    <input id="edtLastName" value.bind="lastName"/>
+</label>
+
+<label>
+    <div>&{en.age}</div>
+    <input id="edtAge" value.bind="age" type="number"/>
+</label>
+<button>Reset</button>
+
+<div>Details : ${firstName} ${lastName} is ${age}</div>
